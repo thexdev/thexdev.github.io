@@ -374,18 +374,18 @@
 	<script src="app.js"></script>
 	<script>
 		$(function () {
-		    let heights = []
-		    let skill   = $('.same-hight')
+			let heights = []
+			let skill   = $('.same-hight')
 
-		    skill.each(function() {
-		      heights.push($(this).height())
-		    });
+			skill.each(function() {
+				heights.push($(this).height())
+			})
 
-		    let maxHeight = Math.max.apply(null, heights)
+			let maxHeight = Math.max.apply(null, heights)
+		    
+			skill.height(maxHeight)
 
-		   	skill.height(maxHeight)
-
-		   	$('body').scrollspy({ target: '#scrollspy' })
+			$('body').scrollspy({ target: '#scrollspy' })
 		})
 	</script>
 </body>
