@@ -26,6 +26,8 @@
 	
 	<!-- Bootsrap 4 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<!-- Typicon -->
 	<link rel="stylesheet" type="text/css" href="assets/fonts/typicons.min.css">
 	<!-- FontAwesome -->
@@ -38,7 +40,7 @@
 <body>
 	<div id="root">
 		<template id="navbar">
-			<nav id="scrollspy" class="navbar navbar-expand-lg navbar-light bg-light py-md-3 sticky-top shadow-sm">
+			<nav id="scrollspy" class="navbar navbar-expand-lg navbar-light bg-light py-md-3 sticky-top shadow-sm d-none">
 				<img src="favicon.png" class="img-fluid">
 			  	<a class="navbar-brand ml-md-2" href="https://thexdev.github.io">THEXDEV</a>
 				<button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +67,7 @@
 		</template>
 
 		<template id="jumbotron">
-			<div class="jumbotron jumbotron-fluid text-center">
+			<div class="jumbotron jumbotron-fluid text-center vh-100" id="particles-js">
 			  	<div class="container">
 			  		<p class="lead d-block d-md-none d-lg-none">
 			  			<span class="badge badge-pill badge-light">A Full-Stack Web Developer</span>
@@ -373,6 +375,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!-- Web Component -->
 	<script src="app.js"></script>
+	<!-- Particles JS -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script>
 		$(function () {
 			let heights = []
@@ -388,6 +392,8 @@
 
 			$('body').scrollspy({ target: '#scrollspy' })
 		})
+
+		particlesJS.load('particles-js', 'config/particlesjs-config.json')
 	</script>
 </body>
 </html>
