@@ -1,3 +1,17 @@
+Vue.component('scroll-indicator', {
+	template:'#indocator',
+	mounted() {
+		let self = this
+		window.addEventListener('scroll', function (e) {
+			let scrollPos  = window.scrollY
+			let winHeight  = window.innerHeight
+			let docHeight  = document.documentElement.scrollHeight
+			let percen     = 100 * scrollPos / (docHeight - winHeight)
+			self.$el.style.width = `${percen}%`
+		})
+	}
+})
+
 Vue.component('navigation-bar', {
 	template: '#navbar'
 })

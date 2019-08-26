@@ -4,11 +4,11 @@
 	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144215147-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	  gtag('config', 'UA-144215147-1');
+		gtag('config', 'UA-144215147-1');
 	</script>
 
 	<!-- Meta Properties -->
@@ -39,64 +39,69 @@
 </head>
 <body>
 	<div id="root">
-		<template id="navbar">
-			<nav id="scrollspy" class="navbar navbar-expand-lg navbar-light bg-light py-md-3 sticky-top shadow-sm d-none">
-				<img src="favicon.png" class="img-fluid">
-			  	<a class="navbar-brand ml-md-2" href="https://thexdev.github.io">THEXDEV</a>
-				<button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="typcn typcn-th-large-outline"></span>
-				</button>
+		<template id="scroll-indicator">
+			<div id="indicator"></div>
+		</template>
 
-			  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav ml-auto">
-					    <li class="nav-item">
-					        <a class="nav-link text-serif" href="#skill">Skill</a>
-					    </li>
-				      	<li class="nav-item">
-				        	<a class="nav-link text-serif" href="#project">Project</a>
-				      	</li>
-				      	<li class="nav-item">
-				      		<a class="nav-link text-serif" href="#experience">Experience</a>
-				      	</li>
-				      	<li class="nav-item">
-				        	<a class="nav-link text-serif" href="#contact">Contact</a>
-				      	</li>
-				    </ul>
-			  	</div>
+		<template id="navbar">
+			<nav id="scrollspy" class="navbar navbar-expand-lg navbar-light bg-light py-md-3 sticky-top shadow-sm">
+				<div class="container">
+					<img src="favicon.png" class="img-fluid">
+					<a class="navbar-brand ml-md-2" href="https://thexdev.github.io">THEXDEV</a>
+					<button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="typcn typcn-th-large-outline"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link text-serif" href="#skill">Skill</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-serif" href="#project">Project</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-serif" href="#experience">Experience</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-serif" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</template>
 
 		<template id="jumbotron">
-			<div class="jumbotron jumbotron-fluid text-center vh-100" id="particles-js">
-			  	<div class="container mt-5 pt-5">
-			  		<p class="lead d-block d-md-none d-lg-none">
-			  			<span class="badge badge-pill badge-light">A Full-Stack Web Developer</span>
-			  		</p>
-			  		<div class="p-0 animated fadeInDown delay-3s" style="font-size:2.5rem">
-			    		<a href="https://github.com/thexdev/" target="_blank" class="text-light mx-2">
-			    			<i class="typcn typcn-social-github-circular"></i>
-			    		</a>
-			    		<a href="https://www.instagram.com/akbar.n253_/" target="_blank" class="text-light mx-2">
-			    			<i class="typcn typcn-social-instagram-circular"></i>
-			    		</a>
-			    		<a href="https://www.facebook.com/axeone.dev" target="_blank" class="text-light mx-2">
-			    			<i class="typcn typcn-social-facebook-circular"></i>
-			    		</a>
-			    		<a href="https://twitter.com/AxeoneDeveloper/" class="text-light mx-2" target="_blank">
-			    			<i class="typcn typcn-social-twitter-circular"></i>
-			    		</a>
-			    	</div>
-			    	<h1 class="display-1 d-none d-md-block align-middle">THEXDEV</h1>
-			    	<p class="lead d-none d-md-block d-lg-block">
-						<span class="badge badge-pill badge-light animated fadeInUp delay-2s">A Full-Stack Web Developer</span>
-			    	</p>
-			    	<button class="btn btn-primary mt-5 rounded-pill btn-lg" style="width: 20%;">More</button>
-			  	</div>
+			<div class="jumbotron jumbotron-fluid text-center">
+				<div class="container">
+					<p class="lead d-block d-md-none d-lg-none">
+						<span class="badge badge-pill badge-light animated fadeInUp delay-3s">A Full-Stack Web Developer</span>
+					</p>
+					<div class="p-0 animated fadeInDown delay-1s" style="font-size:2.5rem">
+						<a href="https://github.com/thexdev/" target="_blank" class="text-secondary mx-2">
+							<i class="typcn typcn-social-github-circular"></i>
+						</a>
+						<a href="https://www.instagram.com/akbar.n253_/" target="_blank" class="text-secondary mx-2">
+							<i class="typcn typcn-social-instagram-circular"></i>
+						</a>
+						<a href="https://www.facebook.com/axeone.dev" target="_blank" class="text-secondary mx-2">
+							<i class="typcn typcn-social-facebook-circular"></i>
+						</a>
+						<a href="https://twitter.com/AxeoneDeveloper/" class="text-secondary mx-2" target="_blank">
+							<i class="typcn typcn-social-twitter-circular"></i>
+						</a>
+					</div>
+					<h1 class="display-1 d-none d-md-block align-middle">THEXDEV</h1>
+					<p class="lead d-none d-md-block d-lg-block">
+						<span class="badge badge-pill badge-light animated fadeInDown delay-3s">A Full-Stack Web Developer</span>
+					</p>
+				</div>
 			</div>
 		</template>
 
 		<template id="abstraction">
-			<div class="container mt-md-5">
+			<div class="container mt-md-5 animated fadeInUp delay-2s">
 				<div class="row">
 					<div v-for="(me, index) in abstraction" :key="index" class="col-sm-12 col-md-4 text-center">
 						<img class="w-50 mb-2" :src="me.image">
@@ -246,82 +251,82 @@
 			<div class="container mt-5">
 				<div class="row">
 					<div class="col-md-3" id="experience">
-						 <div class="card border-0">
-						 	<div class="card-header text-center bg-light border-0 text-serif">
-						 		<h4>
+						<div class="card border-0">
+							<div class="card-header text-center bg-light border-0 text-serif">
+								<h4>
 									<span class="typcn typcn-mortar-board mr-1"></span>Pendidikan
 								</h4>
-						 	</div>
+							</div>
 							<div class="card-body timeline">
 								<ul>
 									<li v-for="(info, index) in timeline.school" :key="index">
-								        <span></span>
-								        <div>{{ info.school }}</div>
-								        <div class="text-wrap">{{ info.address }}</div>
-								        <div>{{ info.course }}</div>
-								        <div class="year">
-								          	<span>{{ info.yearEnd }}</span>
-								          	<span>{{ info.yearStart }}</span>
-								        </div>
-								    </li>
-							    </ul>
+										<span></span>
+										<div>{{ info.school }}</div>
+										<div class="text-wrap">{{ info.address }}</div>
+										<div>{{ info.course }}</div>
+										<div class="year">
+											<span>{{ info.yearEnd }}</span>
+											<span>{{ info.yearStart }}</span>
+										</div>
+									</li>
+								</ul>
 							</div>
-						 </div>
+						</div>
 					</div>
 					<div class="col-md-3">
-						 <div class="card border-0">
-						 	<div class="card-header text-center bg-light border-0 text-serif">
-						 		<h4>
+						<div class="card border-0">
+							<div class="card-header text-center bg-light border-0 text-serif">
+								<h4>
 									<span class="typcn typcn-watch mr-1"></span>Pengalaman
 								</h4>
-						 	</div>
+							</div>
 							<div class="card-body timeline">
 								<ul>
-								    <li>
-								        <span></span>
-								        <div>Be A Part One Of Me</div>
-								        <div>. . .</div>
-								        <div>. . .</div>
-								        <div class="year">
-								          	<span>0000</span>
-								          	<span>0000</span>
-									    </div>
+									<li>
+										<span></span>
+										<div>Be A Part One Of Me</div>
+										<div>. . .</div>
+										<div>. . .</div>
+										<div class="year">
+											<span>0000</span>
+											<span>0000</span>
+										</div>
 									</li>
-							    </ul>
+								</ul>
 							</div>
-						 </div>
+						</div>
 					</div>
 					<div class="col-md-3">
-						 <div class="card border-0">
-						 	<div class="card-header text-center bg-light border-0 text-serif">
-						 		<h4>
+						<div class="card border-0">
+							<div class="card-header text-center bg-light border-0 text-serif">
+								<h4>
 									<span class="typcn typcn-thumbs-up mr-1"></span>Prestasi
 								</h4>
-						 	</div>
+							</div>
 							<div class="card-body">
 								<ol class="p-0 m-auto">
-								    <li class="mb-3" v-for="(info, index) in timeline.pride" :key="index">
-								        {{ info }}
+									<li class="mb-3" v-for="(info, index) in timeline.pride" :key="index">
+										{{ info }}
 									</li>
-							    </ol>
+								</ol>
 							</div>
-						 </div>
+						</div>
 					</div>
 					<div class="col-md-3">
-						 <div class="card border-0">
-						 	<div class="card-header text-center bg-light border-0 text-serif">
-						 		<h4>
+						<div class="card border-0">
+							<div class="card-header text-center bg-light border-0 text-serif">
+								<h4>
 									<span class="typcn typcn-group-outline mr-1"></span>Organisasi
 								</h4>
-						 	</div>
+							</div>
 							<div class="card-body">
 								<ol class="p-0 m-auto">
-								    <li class="mb-3" v-for="(info, index) in timeline.organization" :key="index">
-								        {{ info }}
+									<li class="mb-3" v-for="(info, index) in timeline.organization" :key="index">
+										{{ info }}
 									</li>
-							    </ol>
+								</ol>
 							</div>
-						 </div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -345,18 +350,18 @@
 						</div>
 						<div class="col-md-4">
 							<div class="p-0 text-center text-md-left text-lg-left" style="font-size:2.5rem">
-					    		<a href="https://github.com/thexdev/" target="_blank" class="text-secondary mx-2">
-					    			<i class="typcn typcn-social-github-circular"></i>
-					    		</a>
-					    		<a href="https://www.instagram.com/akbar.n253_/" target="_blank" class="text-secondary mx-2">
-					    			<i class="typcn typcn-social-instagram-circular"></i>
-					    		</a>
-					    		<a href="https://www.facebook.com/axeone.dev" target="_blank" class="text-secondary mx-2">
-					    			<i class="typcn typcn-social-facebook-circular"></i>
-					    		</a>
-					    		<a href="https://twitter.com/AxeoneDeveloper/" class="text-secondary mx-2" target="_blank">
-					    			<i class="typcn typcn-social-twitter-circular"></i>
-					    		</a>
+								<a href="https://github.com/thexdev/" target="_blank" class="text-secondary mx-2">
+									<i class="typcn typcn-social-github-circular"></i>
+								</a>
+								<a href="https://www.instagram.com/akbar.n253_/" target="_blank" class="text-secondary mx-2">
+									<i class="typcn typcn-social-instagram-circular"></i>
+								</a>
+								<a href="https://www.facebook.com/axeone.dev" target="_blank" class="text-secondary mx-2">
+									<i class="typcn typcn-social-facebook-circular"></i>
+								</a>
+								<a href="https://twitter.com/AxeoneDeveloper/" class="text-secondary mx-2" target="_blank">
+									<i class="typcn typcn-social-twitter-circular"></i>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -376,25 +381,5 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!-- Web Component -->
 	<script src="app.js"></script>
-	<!-- Particles JS -->
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script>
-		$(function () {
-			let heights = []
-			let skill   = $('.same-hight')
-
-			skill.each(function() {
-				heights.push($(this).height())
-			})
-
-			let maxHeight = Math.max.apply(null, heights)
-		    
-			skill.height(maxHeight)
-
-			$('body').scrollspy({ target: '#scrollspy' })
-		})
-
-		particlesJS.load('particles-js', 'config/particlesjs-config.json')
-	</script>
 </body>
 </html>
