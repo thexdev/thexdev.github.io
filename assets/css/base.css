@@ -70,12 +70,3 @@
 .text-serif {
   font-family: serif;
 }
-
-#indicator{
-  position: relative;
-  /*top:0;
-  left:0;*/
-  height: 10px;
-  background-color: red;
-  z-index: 1;
-}
